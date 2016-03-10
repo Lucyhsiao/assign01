@@ -1,0 +1,52 @@
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+            <meta charset="UTF-8">
+            <title>線上報名</title>
+            </head>
+
+            <body>
+                <form action="#" method="post">                   
+                    <fieldset>
+                        <legend> Registration Form</legend>
+                        <!-- 姓名(必填)：文字框 (最長10個字元)-->
+                        <label for="name">姓名(必填):</label>
+                        <input name="name" type="text" id="name" tabindex="1" placeholder="Your name" maxlength="10" required/>
+                        <br>
+
+                      <!-- 學院(必填)：選擇框 (列出9個學院)-->
+                        <label for="select-college">學院(必填):</label>
+                        <select name="select-college" id="select-college" tabindex="2">
+                            <option value="">(請選擇)</option>
+                            <option value="文學院">文學院</option>
+                            <option value="理學院">理學院</option>
+                            <option value="社會科學學院">社會科學學院</option>
+                            <option value="外國語文學院">外國語文學院</option>
+                            <option value="商學院">商學院</option>
+                            <option value="國際事務學院">國際事務學院</option>
+                            <option value="傳播學院">傳播學院</option>
+                            <option value="教育學院">教育學院</option>
+                            <option value="法學院">法學院</option>
+                        </select>
+                        <br>
+                      <!-- 手機(必填)：文字框 (最長10個字元且只能為純數字)-->
+                        <label for="phone">手機(必填):</label>
+                        <input name="phone" type="text" id="phone" tabindex="3" placeholder="Your phone" maxlength="10" required pattern="[0-9]{10}"/>
+                        <br>
+                      <!-- Email(必填)：文字框 (檢查email格式)-->
+                        <label for="email">Email(必填):</label> 
+                        <input name="email" type="email" id="email" tabindex="4" placeholder="you@somewhere.com" required/>
+                        <br>
+                      <!-- 生日(非必填)：西元年／月／日-->
+                        <label for="birth">生日(非必填):</label>                        
+                        <input name="birth" type="text" id="birth" tabindex="5" placeholder="西元年/月/日">
+                        
+                      <!-- 送出按鈕-->
+                    <div>
+                        <input type="submit" value="Submit" />
+                    </div>  
+                </fieldset>
+                </form>         
+                </body>
+                </html>
